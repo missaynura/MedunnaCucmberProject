@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="76.775" tests="8" skipped="0" failures="0" errors="0">
-<testcase classname="Medunna Admin" name="Create Room - Example #1.1" time="9.435">
+<testsuite name="Cucumber" time="21.992" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="Medunna Admin" name="Create Room - Example #1.1" time="14.252">
 <system-out><![CDATA[
 Given user navigates to "https://medunna.com"...............................passed
 When click on user icon.....................................................passed
@@ -15,153 +15,22 @@ And enter room number "881133133"...........................................pass
 And select room type "DAYCARE"..............................................passed
 And click on status checkbox................................................passed
 And enter price "333".......................................................passed
-And enter description "This room was created for cucumber practice Example 1".passed
+And enter description "This room was created for cucumber practice e2e test".passed
 And click on save button....................................................passed
 Then assert the alert message contains A new Room is created................passed
 And close the application...................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Medunna Admin" name="Create Room - Example #1.2" time="9.094">
+<testcase classname="Get the room and validate" name="Send the get request and do assertion" time="3.574">
 <system-out><![CDATA[
-Given user navigates to "https://medunna.com"...............................passed
-When click on user icon.....................................................passed
-And click on sign in link...................................................passed
-And enter username..........................................................passed
-And enter password..........................................................passed
-And click on sign in submit button..........................................passed
-When click on itemsAndTitles link...........................................passed
-And click on room link......................................................passed
-And click on create a new room link.........................................passed
-And enter room number "881223733"...........................................passed
-And select room type "PREMIUM_DELUXE".......................................passed
-And click on status checkbox................................................passed
-And enter price "678".......................................................passed
-And enter description "This room was created for cucumber practice Example 2".passed
-And click on save button....................................................passed
-Then assert the alert message contains A new Room is created................passed
-And close the application...................................................passed
+Given send get request by id to read the room...............................passed
+Then validate body..........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Medunna Admin" name="Create Room - Example #1.3" time="9.157">
+<testcase classname="Database room test" name="Get the room and validate" time="3.955">
 <system-out><![CDATA[
-Given user navigates to "https://medunna.com"...............................passed
-When click on user icon.....................................................passed
-And click on sign in link...................................................passed
-And enter username..........................................................passed
-And enter password..........................................................passed
-And click on sign in submit button..........................................passed
-When click on itemsAndTitles link...........................................passed
-And click on room link......................................................passed
-And click on create a new room link.........................................passed
-And enter room number "881773833"...........................................passed
-And select room type "DELUXE"...............................................passed
-And click on status checkbox................................................passed
-And enter price "908".......................................................passed
-And enter description "This room was created for cucumber practice Example 3".passed
-And click on save button....................................................passed
-Then assert the alert message contains A new Room is created................passed
-And close the application...................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Medunna Admin" name="Create Room - Example #1.4" time="11.26">
-<system-out><![CDATA[
-Given user navigates to "https://medunna.com"...............................passed
-When click on user icon.....................................................passed
-And click on sign in link...................................................passed
-And enter username..........................................................passed
-And enter password..........................................................passed
-And click on sign in submit button..........................................passed
-When click on itemsAndTitles link...........................................passed
-And click on room link......................................................passed
-And click on create a new room link.........................................passed
-And enter room number "881003633"...........................................passed
-And select room type "SUITE"................................................passed
-And click on status checkbox................................................passed
-And enter price "500".......................................................passed
-And enter description "This room was created for cucumber practice Example 4".passed
-And click on save button....................................................passed
-Then assert the alert message contains A new Room is created................passed
-And close the application...................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Medunna Admin" name="Send Message - Example #1.1" time="8.646">
-<system-out><![CDATA[
-Given user navigates to "https://medunna.com"...............................passed
-When click on user icon.....................................................passed
-And click on sign in link...................................................passed
-And enter username..........................................................passed
-And enter password..........................................................passed
-And click on sign in submit button..........................................passed
-When click on itemsAndTitles link...........................................passed
-And click on messages link..................................................passed
-And click on create a new message link......................................passed
-And enter name "John".......................................................passed
-And enter email "john@doe.com"..............................................passed
-And enter subject "Hi"......................................................passed
-And enter message "This is an urgent situation".............................passed
-And click on save submit button.............................................passed
-Then assert the alert message contains A new Message is created.............passed
-And close the application...................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Medunna Admin" name="Send Message - Example #1.2" time="12.096">
-<system-out><![CDATA[
-Given user navigates to "https://medunna.com"...............................passed
-When click on user icon.....................................................passed
-And click on sign in link...................................................passed
-And enter username..........................................................passed
-And enter password..........................................................passed
-And click on sign in submit button..........................................passed
-When click on itemsAndTitles link...........................................passed
-And click on messages link..................................................passed
-And click on create a new message link......................................passed
-And enter name "Mary".......................................................passed
-And enter email "mary@doe.com"..............................................passed
-And enter subject "Hello"...................................................passed
-And enter message "This is my message"......................................passed
-And click on save submit button.............................................passed
-Then assert the alert message contains A new Message is created.............passed
-And close the application...................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Medunna Admin" name="Send Message - Example #1.3" time="8.553">
-<system-out><![CDATA[
-Given user navigates to "https://medunna.com"...............................passed
-When click on user icon.....................................................passed
-And click on sign in link...................................................passed
-And enter username..........................................................passed
-And enter password..........................................................passed
-And click on sign in submit button..........................................passed
-When click on itemsAndTitles link...........................................passed
-And click on messages link..................................................passed
-And click on create a new message link......................................passed
-And enter name "Harry"......................................................passed
-And enter email "harry@doe.com".............................................passed
-And enter subject "Ola!!"...................................................passed
-And enter message "This is Spanish message".................................passed
-And click on save submit button.............................................passed
-Then assert the alert message contains A new Message is created.............passed
-And close the application...................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Medunna Admin" name="Send Message - Example #1.4" time="8.4">
-<system-out><![CDATA[
-Given user navigates to "https://medunna.com"...............................passed
-When click on user icon.....................................................passed
-And click on sign in link...................................................passed
-And enter username..........................................................passed
-And enter password..........................................................passed
-And click on sign in submit button..........................................passed
-When click on itemsAndTitles link...........................................passed
-And click on messages link..................................................passed
-And click on create a new message link......................................passed
-And enter name "Ali"........................................................passed
-And enter email "Ali@doe.com"...............................................passed
-And enter subject "Merhaba".................................................passed
-And enter message "This is Turkish message".................................passed
-And click on save submit button.............................................passed
-Then assert the alert message contains A new Message is created.............passed
-And close the application...................................................passed
+Given connect to database...................................................passed
+Then read the room and validate body........................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

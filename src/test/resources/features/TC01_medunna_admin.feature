@@ -9,7 +9,7 @@ Feature: Medunna Admin
     And enter password
     And click on sign in submit button
 
-
+  @createRoom  @e2e
   Scenario Outline: Create Room
     When click on itemsAndTitles link
     And click on room link
@@ -24,10 +24,10 @@ Feature: Medunna Admin
     And close the application
     Examples:
       | room number | room type      | price | description                                           |
-      | 881133133   | DAYCARE        | 333   | This room was created for cucumber practice Example 1 |
-      | 881223733   | PREMIUM_DELUXE | 678   | This room was created for cucumber practice Example 2 |
-      | 881773833   | DELUXE         | 908   | This room was created for cucumber practice Example 3 |
-      | 881003633   | SUITE          | 500   | This room was created for cucumber practice Example 4 |
+      | 881133133   | DAYCARE        | 333   | This room was created for cucumber practice e2e test |
+#      | 881223733   | PREMIUM_DELUXE | 678   | This room was created for cucumber practice Example 2 |
+#      | 881773833   | DELUXE         | 908   | This room was created for cucumber practice Example 3 |
+#      | 881003633   | SUITE          | 500   | This room was created for cucumber practice Example 4 |
 
   @MedunnaMessage
   Scenario Outline: Send Message
